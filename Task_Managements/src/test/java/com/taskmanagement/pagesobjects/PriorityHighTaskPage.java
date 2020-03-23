@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class PriorityHighTaskPage {
  WebDriver driver;
@@ -57,9 +58,8 @@ public class PriorityHighTaskPage {
  public void priority()
  {
 	 driver.findElement(Priority).click();
-	 driver.findElement(Priority).sendKeys(Keys.DOWN);
-	 driver.findElement(Priority).sendKeys(Keys.DOWN);
-	 driver.findElement(Priority).sendKeys(Keys.ENTER);
+		Select pri =new Select(driver.findElement(Priority));
+		pri.selectByValue("1");
 	 driver.findElement(Search).click();
  }
  //printing priority high task in the console

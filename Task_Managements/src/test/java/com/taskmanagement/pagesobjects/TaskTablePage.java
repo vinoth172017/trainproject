@@ -55,6 +55,11 @@ public class TaskTablePage {
 				System.out.println(a);
 		}			// printing the web table column in console
 		Thread.sleep(3000);
-		driver.close();		
+		
+				
 }
+	public void exit()
+	{
+		driver.close();
+	}
 }

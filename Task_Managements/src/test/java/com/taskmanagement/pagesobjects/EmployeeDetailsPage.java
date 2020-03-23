@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-public class EmployeeDatailsPage {
+public class EmployeeDetailsPage {
 	WebDriver driver;  
 		//locators for getting employee name and mail id in console
 	By admin =By.xpath("/html/body/table[1]/tbody/tr[2]/td[3]/a");

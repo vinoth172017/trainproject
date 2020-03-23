@@ -51,6 +51,10 @@ public class SearchClosedStatusPage {
 		driver.findElement(Status).sendKeys(Keys.ENTER);
 		driver.findElement(Search).click();
 		Thread.sleep(4000);
+		
+	}
+	public void exit()
+	{
 		driver.close();
 	}
 	
